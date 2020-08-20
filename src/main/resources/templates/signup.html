@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign up</title>
+</head>
+<body>
+<h1> Sign up for Waqas Book</h1>
+<form th:object="${user}" th:action="@{/signup}" action="#" method="post">
+    <label>User Name:</label><br>
+    <input th:field="*{userName}" type="text" id="userName" name="userName"><br>
+    <label>Password:</label><br>
+    <input th:field="*{password}" type="text" id="password" name="password"><br>
+    <label>First Name:</label><br>
+    <input th:field="*{firstName}" type="text" id="firstName" name="firstName"><br>
+    <label>Last Name:</label><br>
+    <input th:field="*{lastName}" type="text" id="lastName" name="lastName"><br>
+    <button id="submit-button" type="submit" class="btn btn-primary">Sign Up</button><br>
+</form>
+</body>
+</html>
